@@ -132,6 +132,17 @@
             maximumAge: 0
         })
       })
+	  
+	  document.addEventListener("keydown", (e) => {
+		var key = e.key;
+		
+		if (key == " ") {
+			camera.object3D.position.y += 1
+		} else if (key == "Control") {
+			camera.object3D.position.y -= 1
+		}
+	  
+	  })
 
 
     </script>
